@@ -336,7 +336,7 @@ python -c "import torch; print(torch.backends.cudnn.version())"
 
 ## 安装cuDNN:
 
-可以在cuDNN官方配置个人系统生成安装指令，例如:
+可以在[cuDNN官方](https://developer.nvidia.com/cudnn-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_network)配置个人系统生成安装指令，例如:
 
 ![](./docs/cudnn安装指令.png)
 
