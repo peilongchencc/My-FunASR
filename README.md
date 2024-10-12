@@ -381,6 +381,7 @@ conda activate funasr_onnx
 pip install -U funasr
 # 笔者安装的funasr-onnx版本为0.4.1
 pip install -U funasr-onnx
+# 安装modelscope，用于拉取模型
 pip3 install -U modelscope
 ```
 
@@ -409,7 +410,7 @@ apt install ffmpeg
 pip install onnxruntime-gpu
 ```
 
-该指令会自动安装 `onnx onnxruntime onnxruntime-gpu` ，笔者安装的版本为:
+该指令会自动安装 `onnx`、`onnxruntime`、`onnxruntime-gpu` ，笔者安装的版本为:
 
 ```log
 onnx                              1.17.0
@@ -427,7 +428,7 @@ onnxruntime-gpu                   1.19.2
 pip install onnxruntime-gpu==1.16
 ```
 
-⚠️如果运行代码后，终端出现下列内容，说明 onnxruntime-gpu 没有正常启用:
+⚠️如果运行代码后，终端出现下列内容，说明 `onnxruntime-gpu` 没有正常启用:
 
 ```log
 RuntimeWarning: CUDAExecutionProvider is not avaiable for current env, the inference part is automatically shifted to be executed under CPUExecutionProvider.
@@ -480,7 +481,7 @@ python openapi/simple_asr_test_average.py
 
 ## 附录: CUDA Toolkit 与 cuDNN 匹配性检查
 
-注意⚠️: CUDNN 需要和 CUDA Toolkit 版本匹配才可以正常使用 onnxruntime-gpu。
+注意⚠️: cuDNN 需要和 CUDA Toolkit 版本匹配才可以正常使用 onnxruntime-gpu。
 
 最新版本 CUDA Toolkit 与 cuDNN [匹配矩阵](https://docs.nvidia.com/deeplearning/cudnn/latest/reference/support-matrix.html):
 
