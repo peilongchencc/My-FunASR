@@ -338,7 +338,7 @@ python -c "import torch; print(torch.backends.cudnn.version())"
 
 可以在cuDNN官方配置个人系统生成安装指令，例如:
 
-![](../docs/cudnn安装指令.png)
+![](./docs/cudnn安装指令.png)
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
@@ -419,7 +419,7 @@ onnxruntime-gpu                   1.19.2
 
 你可能需要安装与自己电脑cuda匹配的onnx版本，请查看[onnx官网](https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html#install)。
 
-![](../docs/onnx和cuda匹配关系.png)
+![](./docs/onnx和cuda匹配关系.png)
 
 例如 ubuntu 22.04、cuDNN 8.9.7、CUDA Toolkit 11.8:
 
@@ -484,15 +484,15 @@ python openapi/simple_asr_test_average.py
 
 最新版本 CUDA Toolkit 与 cuDNN [匹配矩阵](https://docs.nvidia.com/deeplearning/cudnn/latest/reference/support-matrix.html):
 
-![](../docs/最新版cudnn匹配矩阵.png)
+![](./docs/最新版cudnn匹配矩阵.png)
 
 过往版本 CUDA Toolkit 与 cuDNN [匹配矩阵](https://docs.nvidia.com/deeplearning/cudnn/latest/reference/archives.html):
 
-![](../docs/过往版本%20CUDA%20Toolkit%20与%20cuDNN匹配矩阵.png)
+![](./docs/过往版本%20CUDA%20Toolkit%20与%20cuDNN匹配矩阵.png)
 
 例如 cuDNN 8.9.7 和 CUDA Toolkit 的[匹配矩阵](https://docs.nvidia.com/deeplearning/cudnn/archives/cudnn-897/support-matrix/index.html):
 
-![](../docs/cudnn897匹配矩阵.png)
+![](./docs/cudnn897匹配矩阵.png)
 
 
 ## 鸣谢:
