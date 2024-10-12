@@ -32,6 +32,7 @@
   - [运行测试脚本:](#运行测试脚本)
     - [单文件测试:](#单文件测试)
     - [批量测试:](#批量测试)
+    - [推理效果:](#推理效果)
   - [附录: CUDA Toolkit 与 cuDNN 匹配性检查](#附录-cuda-toolkit-与-cudnn-匹配性检查)
   - [鸣谢:](#鸣谢)
 
@@ -477,6 +478,10 @@ python openapi/simple_asr_test.py
 ```bash
 python openapi/simple_asr_test_average.py
 ```
+
+### 推理效果:
+
+针对5秒钟的wav文件 ubuntu 22.04 4090(24G) 推理速度为0.30s。
 
 
 ## 附录: CUDA Toolkit 与 cuDNN 匹配性检查
